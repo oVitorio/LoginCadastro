@@ -1,6 +1,6 @@
 ﻿namespace LoginCadastro
 {
-    partial class Cadastrar
+    partial class CadastrarUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastrar));
-            button1 = new Button();
-            linkLabel1 = new LinkLabel();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarUsuarios));
             txtBoxUsuarioCadastro = new TextBox();
-            txtBoxEmail = new TextBox();
-            txtBoxSenhaCadastro = new TextBox();
-            label2 = new Label();
             label3 = new Label();
+            button1 = new Button();
+            label2 = new Label();
+            linkLabel1 = new LinkLabel();
+            txtBoxSenhaCadastro = new TextBox();
+            label1 = new Label();
+            txtBoxEmail = new TextBox();
             panel1 = new Panel();
             label5 = new Label();
             label4 = new Label();
@@ -45,6 +45,24 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // txtBoxUsuarioCadastro
+            // 
+            txtBoxUsuarioCadastro.Location = new Point(97, 114);
+            txtBoxUsuarioCadastro.Name = "txtBoxUsuarioCadastro";
+            txtBoxUsuarioCadastro.Size = new Size(256, 23);
+            txtBoxUsuarioCadastro.TabIndex = 3;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(97, 222);
+            label3.Name = "label3";
+            label3.Size = new Size(78, 29);
+            label3.TabIndex = 7;
+            label3.Text = "Senha";
             // 
             // button1
             // 
@@ -58,6 +76,17 @@
             button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(97, 152);
+            label2.Name = "label2";
+            label2.Size = new Size(77, 29);
+            label2.TabIndex = 6;
+            label2.Text = "Email";
             // 
             // linkLabel1
             // 
@@ -73,6 +102,13 @@
             linkLabel1.Text = "login";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // txtBoxSenhaCadastro
+            // 
+            txtBoxSenhaCadastro.Location = new Point(97, 254);
+            txtBoxSenhaCadastro.Name = "txtBoxSenhaCadastro";
+            txtBoxSenhaCadastro.Size = new Size(256, 23);
+            txtBoxSenhaCadastro.TabIndex = 5;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -84,50 +120,12 @@
             label1.TabIndex = 2;
             label1.Text = "Usuario ";
             // 
-            // txtBoxUsuarioCadastro
-            // 
-            txtBoxUsuarioCadastro.Location = new Point(97, 114);
-            txtBoxUsuarioCadastro.Name = "txtBoxUsuarioCadastro";
-            txtBoxUsuarioCadastro.Size = new Size(256, 23);
-            txtBoxUsuarioCadastro.TabIndex = 3;
-            // 
             // txtBoxEmail
             // 
             txtBoxEmail.Location = new Point(97, 184);
             txtBoxEmail.Name = "txtBoxEmail";
             txtBoxEmail.Size = new Size(256, 23);
             txtBoxEmail.TabIndex = 4;
-            // 
-            // txtBoxSenhaCadastro
-            // 
-            txtBoxSenhaCadastro.Location = new Point(97, 254);
-            txtBoxSenhaCadastro.Name = "txtBoxSenhaCadastro";
-            txtBoxSenhaCadastro.Size = new Size(256, 23);
-            txtBoxSenhaCadastro.TabIndex = 5;
-            txtBoxSenhaCadastro.TextChanged += textBox3_TextChanged;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(97, 152);
-            label2.Name = "label2";
-            label2.Size = new Size(77, 29);
-            label2.TabIndex = 6;
-            label2.Text = "Email";
-            label2.Click += label2_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Trebuchet MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(97, 222);
-            label3.Name = "label3";
-            label3.Size = new Size(78, 29);
-            label3.TabIndex = 7;
-            label3.Text = "Senha";
             // 
             // panel1
             // 
@@ -143,10 +141,10 @@
             panel1.Controls.Add(txtBoxSenhaCadastro);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(txtBoxEmail);
-            panel1.Location = new Point(460, -4);
+            panel1.Location = new Point(440, -23);
             panel1.Name = "panel1";
             panel1.Size = new Size(460, 497);
-            panel1.TabIndex = 8;
+            panel1.TabIndex = 10;
             // 
             // label5
             // 
@@ -180,22 +178,21 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-79, 12);
+            pictureBox1.Location = new Point(-99, -7);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(524, 443);
-            pictureBox1.TabIndex = 9;
+            pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
-            // Cadastrar
+            // CadastrarUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(931, 472);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            Name = "Cadastrar";
-            Text = "Cadastrar";
+            Controls.Add(pictureBox1);
+            Name = "CadastrarUsuarios";
+            Text = "CadastrarUsuarios";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -204,18 +201,18 @@
 
         #endregion
 
-        private Button button1;
-        private LinkLabel linkLabel1;
-        private Label label1;
         private TextBox txtBoxUsuarioCadastro;
-        private TextBox txtBoxEmail;
-        private TextBox txtBoxSenhaCadastro;
-        private Label label2;
         private Label label3;
+        private Button button1;
+        private Label label2;
+        private LinkLabel linkLabel1;
+        private TextBox txtBoxSenhaCadastro;
+        private Label label1;
+        private TextBox txtBoxEmail;
         private Panel panel1;
-        private PictureBox pictureBox1;
         private Label label5;
         private Label label4;
         private TextBox txtBoxConfirmaSenhaCadastro;
+        private PictureBox pictureBox1;
     }
 }

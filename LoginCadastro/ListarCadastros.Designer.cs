@@ -51,7 +51,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Name = "ListarCadastros";
-            Text = "ListarCadastros";
+            Text = "]";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
