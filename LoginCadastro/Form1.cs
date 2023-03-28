@@ -35,7 +35,7 @@ namespace LoginCadastro
 
         private void LnkLblCadastrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Cadastrar formCadastrar = new Cadastrar();
+            CadastrarUsuarios formCadastrar = new CadastrarUsuarios();
             formCadastrar.Show();
             this.Hide();
         }
